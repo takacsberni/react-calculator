@@ -9,3 +9,5 @@ git@github.com:takacsberni/react-calculator.git
 ### And run `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+![alt text](https://github.com/takacsberni/react-calculator/blob/master/simple-react-calc.png?raw=true)
