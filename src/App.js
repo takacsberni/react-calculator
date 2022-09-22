@@ -15,6 +15,11 @@ function App() {
 
     const calculate = () => {
         setResult(eval(result).toString() );
+        console.log(eval(result).toString())
+    }
+
+    function backspace() {
+        setResult(result.slice(0, result.length-1));
     }
 
     return (
@@ -32,11 +37,14 @@ function App() {
               <button className="btn-number" name="7" onClick={handleClick}>7</button>
               <button className="btn-number" name="8" onClick={handleClick}>8</button>
               <button className="btn-number" name="9" onClick={handleClick}>9</button>
-              <button className="btn-operator" name="X" onClick={handleClick}>X</button>
-              <button className="btn-clear" id="clear" onClick={handleClear}>C</button>
+              <button className="btn-operator" name="*" onClick={handleClick}>*</button>
               <button className="btn-number" name="0" onClick={handleClick}>0</button>
-              <button className="btn-equals" id={result} onClick={calculate} >=</button>
+              <button className="btn-operator" name="." onClick={handleClick}>.</button>
+              <button className="btn-clear" id="backspace" onClick={backspace}>C</button>
               <button className="btn-operator" name="/" onClick={handleClick}>/</button>
+              <button className="btn-operator" name="clear" onClick={handleClear}>clear</button>
+              <button className="btn-equals" id={result} onClick={calculate}>=</button>
+
           </div>
       </div>
   );
