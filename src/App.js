@@ -39,11 +39,11 @@ function App() {
               <button className="btn-number" name="9" onClick={handleClick}>9</button>
               <button className="btn-operator" name="*" onClick={handleClick}>*</button>
               <button className="btn-number" name="0" onClick={handleClick}>0</button>
-              <button className="btn-operator" name="." onClick={handleClick}>.</button>
-              <button className="btn-clear" id="backspace" onClick={backspace}>C</button>
+              <button className="btn-other" name="." onClick={handleClick}>.</button>
+              <button className="btn-other" id="backspace" onClick={backspace}>C</button>
               <button className="btn-operator" name="/" onClick={handleClick}>/</button>
-              <button className="btn-operator" name="clear" onClick={handleClear}>clear</button>
-              <button className="btn-equals" id={result} onClick={calculate}>=</button>
+              <button className="btn-other" name="clear" onClick={handleClear}>clear</button>
+              <button className="btn-other" id={result} onClick={calculate}>=</button>
 
           </div>
       </div>

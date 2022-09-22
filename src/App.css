@@ -1,25 +1,44 @@
 .container {
-    background: lightgray;
+    justify-content: right;
     width: max-content;
     margin: auto;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
 }
 .display{
-    width: 100%;
-    background-color: darkGrey;
-    height: 50px;
+    width: 500px;
+    background-color: gainsboro;
+    height: 70px;
     font-size: 48px;
     display: flex;
     justify-content: flex-end;
+    border-radius: 18px 18px 18px 18px;
 }
 .buttons{
-    max-width: 400px;
+    max-width: 500px;
     display:flex;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 15px;
+    /*width: max-content;*/
 }
 button{
     flex: 1 25%;
     padding: 15px;
     font-size: 26px;
     cursor: pointer;
+    border-radius: 28px 28px 28px 28px;
 }
 
+.btn-operator {
+    background-color: goldenrod;
+}
+
+.btn-number{
+    background-color: darkseagreen;
+}
+
+.btn-other {
+    background-color: salmon;
+}
