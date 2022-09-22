@@ -9,15 +9,19 @@ function App() {
         console.log(e.target.name)
     }
 
-    const handleClear = ()=> {
+    const handleClear = () => {
         setResult("");
+    }
+
+    const calculate = () => {
+        setResult(eval(result).toString() );
     }
 
     return (
       <div className="container">
           <input className="display" value={result}></input>
           <div className="buttons">
-              <button className="btn-number" name="1">1</button>
+              <button className="btn-number" name="1" onClick={handleClick}>1</button>
               <button className="btn-number" name="2" onClick={handleClick}>2</button>
               <button className="btn-number" name="3" onClick={handleClick}>3</button>
               <button className="btn-operator" name="+" onClick={handleClick}>+</button>
@@ -31,7 +35,7 @@ function App() {
               <button className="btn-operator" name="X" onClick={handleClick}>X</button>
               <button className="btn-clear" id="clear" onClick={handleClear}>C</button>
               <button className="btn-number" name="0" onClick={handleClick}>0</button>
-              <button className="btn-equals" name="=" onClick={handleClick}>=</button>
+              <button className="btn-equals" id={result} onClick={calculate} >=</button>
               <button className="btn-operator" name="/" onClick={handleClick}>/</button>
           </div>
       </div>
